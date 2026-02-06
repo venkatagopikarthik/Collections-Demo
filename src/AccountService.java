@@ -39,5 +39,15 @@ public class AccountService {
             }
         }
 
+        System.out.println("Enter Account number to update");
+        long acId=sc.nextLong();
+        System.out.println("Enter Updated Pin ");
+        int pin=sc.nextInt();
+        for(Account acc:accounts){
+            if(acc.getAccId()==accNum){
+                acc.setPin(pin);
+            }
+        }
+
     }
 }
